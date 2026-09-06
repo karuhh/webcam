@@ -1,0 +1,41 @@
+body {
+    background: #111;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+video {
+    display: none;
+}
+
+canvas {
+    width: 640px;
+    max-width: 90vw;
+    transform: scaleX(-1);
+    pointer-events: none;
+}
+
+canvas {
+    position: absolute;
+
+    pointer-events: none;
+    left: 25%;
+
+}
+
+.instruction{
+    position: absolute;
+    left: 1rem;
+    width: 15rem;
+}
+.right{
+    position: absolute;
+    right: 2rem;
+    width: 15rem;
+}
+.right video {
+    width: 100%;
+    height: auto;
+    display: block;
+}

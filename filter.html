@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 
+
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'self' data: blob: https://cdn.jsdelivr.net;">
+<title>z0mbfer webby</title>
+    <link rel="stylesheet" href="filter.css">
+</head>
+
+
+<body>
+
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="canvas"></canvas>
+
+    <script type="module" src="./filter.js"></script>
+    <div class="instruction">
+        <div class="title">
+            <h1>How to use</h1>
+            <p>You need both of your hands inframe first, make sure that the skeleton of the hands are generating
+                properly. <br>
+                - i reccommend having your palms facing the camera so the program can read the skeleton better, then
+                touch
+                the fingertips of your thumb and middlefinger together (on each of both hands). That will render the
+                usual filter range.
+                <br>- Doing the same thing but with your index finger instead of middle will create a
+                pixelated range.
+                <br>- Filters can stack.
+                <br>- If you make the usual filter range overlap on each other like an
+                hourglass, the right triangle will be a black-and-green filter, while the left triangle can change
+                normally.
+            </p>
+        </div>
+    </div>
+    <div class="right"> <video autoplay loop muted playsinline src="https://files.catbox.moe/d02t14.mov"></video>
+        <p> <br>- To change the filter, move your right (or left, depends) index finger how the fingertip will
+            be lower than the knuckle of that finger (like a flick of your finger, pointing down). Make sure to
+            move your finger back into its usual pointing up position, because THEN the filter will change.
+        </p>
+    </div>
+
+</body>
+
+</html>
