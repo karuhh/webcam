@@ -45,7 +45,7 @@ blurCanvas.height = canvas.height;
 // ------------------------------------
 
 const vision = await FilesetResolver.forVisionTasks(
-    "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/wasm"
+  "./wasm"
 );
 
 const handLandmarker = await HandLandmarker.createFromOptions(
